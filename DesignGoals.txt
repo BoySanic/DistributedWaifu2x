@@ -1,0 +1,96 @@
+Design goals:
+
+1. Anyone can drop in and drop out with minimal impact on the network (other than perf)
+	- Should send frames to work on, and mark them as being worked, but put a timeout period on them so that they do get worked at some point if the original worker fucks off
+	- Package IDs of some kind would be good. And assign project filepaths per project, and filepaths to each PackageID both for a prefix and for the actual frame filename
+
+2. Should not need to use a network share of some kind to upload/download frames.
+	- I'm envisioning a byte array sent over TCP. 
+		- I still need to work out how I can do this. I need to come up with some kind of TCP process.
+		--TCP Process
+			Client opens connection with server
+			Server receives original request
+				- If needs work
+					- Check standing with network to determine how many frames to include in the package
+					- Assign those frames a PackageID (insert into package table)
+					- Ingest frames into byte buffer the size of all the files combined
+					- Begin to send this across the network with a packageID
+					- Client accepts the data back, creates a folder with the package ID, and saves all the files to the folder from the byte array
+						- I'm not too sure how to do this. Like, how to split the bytes up.
+							- Perhaps I have a file class, containing a byte array and filename
+							- Maybe I serialize that file class as an array of file classes, and send that across?
+								- File class
+									string Name
+									byte[] FileBytes
+
+								    ^ Serialize that 
+				- If returning work
+					- Begin taking in the bytes from the client, as client will immediately be sending shit across
+					- Once complete, cast bytes into a Package class
+					- Make sure that the package isn't invalid. 
+						If expired, the client is incredibly slow most likely and should be assigned a higher tolerance level.
+							If another client hasn't yet received the same frames, we can probably accept the frames.
+							Need to be careful with overlap
+						Might just be total garbage data, too. In this case, reject the work, and set the package expiration to right now. (If the packageID even exists)
+					    	If packageID doesn't exist, we can just fuck off.
+
+					- Ingest package, marking the package as completed in SQL, and thus the frames as completed in the overall project
+					- Save all files to the final folder
+					- Determine how long it took for the client to process those, use some form of a weight system to figure out it's "performance standing" on the network
+					- Client probably declares itself ready for more work once this transaction is completed
+
+3. Should be able to have something crash and not burn down the entire project
+	- Project data stored in SQL
+	- Server spawns and listens for all active projects, and assigns work
+	- Server doesn't just automatically start ingesting footage. Perhaps another program handles that
+	- FrameBucket
+		- Ingests frames
+		- Assigns work
+		- Accepts work completed
+		- Deals with client-server communications
+	- FrameDigester (name pending)
+		- Ingests footage
+		- Creates project data
+			- Frames
+			- Assigns project ID
+			- Gives each frame an assignment to the project
+		- Manages how much storage is taken to ensure we don't run out of space during all this. Only ingests what it can.
+	- FrameShitter (name pending)
+		- Monitors active projects
+		- Assembles video if project frames are all completed
+4. Killing the client should kill the waifu2x that's running.
+	- I don't think we have a way to "pause" waifu2x... So it'll just be a straight up kill
+	- Keep packages relatively small so that packages can be completed in a timely manner, in case a user doesn't want it on very long
+
+
+Data structures:
+
+Worker class
+string Hostname
+string LastIPAddr
+int[] deviceIDs (client-only)
+	- Maybe there's multiple GPUs or something. Each client should be able to say how many devices to use.
+	- We should make this a winform that lists the devices waifu2x could see and you can choose which devices of those to use.
+		- Parse console output from waifu2x -l (or whatever) to make a combobox containing the devices (something like this)
+string currPackageID
+string performanceIndex
+	- WIP, this will determine how many frames per package to the client
+
+Package class
+string PackageID
+string ProjectID
+File[] FilesInPackage
+DateTime Expiration
+
+Project class
+string ProjectID
+string ProjectMainPath
+string ProjectOutPath
+string ProjectInPath
+string ProjectUpscaleRatio
+int ProjectOriginalHeight
+int ProjectOriginalWidth
+
+File class
+string FileName
+byte[] FileBytes

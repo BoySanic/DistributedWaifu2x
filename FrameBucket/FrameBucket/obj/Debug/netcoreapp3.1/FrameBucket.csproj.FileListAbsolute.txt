@@ -1,0 +1,13 @@
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\bin\Debug\netcoreapp3.1\FrameBucket.exe
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\bin\Debug\netcoreapp3.1\FrameBucket.deps.json
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\bin\Debug\netcoreapp3.1\FrameBucket.runtimeconfig.json
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\bin\Debug\netcoreapp3.1\FrameBucket.runtimeconfig.dev.json
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\bin\Debug\netcoreapp3.1\FrameBucket.dll
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\bin\Debug\netcoreapp3.1\FrameBucket.pdb
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\obj\Debug\netcoreapp3.1\FrameBucket.csprojAssemblyReference.cache
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\obj\Debug\netcoreapp3.1\FrameBucket.csproj.CoreCompileInputs.cache
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\obj\Debug\netcoreapp3.1\FrameBucket.AssemblyInfoInputs.cache
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\obj\Debug\netcoreapp3.1\FrameBucket.AssemblyInfo.cs
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\obj\Debug\netcoreapp3.1\FrameBucket.dll
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\obj\Debug\netcoreapp3.1\FrameBucket.pdb
+C:\Users\npeterson\source\repos\FrameBucket\FrameBucket\obj\Debug\netcoreapp3.1\FrameBucket.genruntimeconfig.cache

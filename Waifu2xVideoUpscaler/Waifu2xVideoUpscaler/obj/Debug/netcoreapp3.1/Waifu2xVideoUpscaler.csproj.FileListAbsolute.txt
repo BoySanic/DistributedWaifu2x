@@ -1,0 +1,13 @@
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\bin\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.exe
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\bin\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.deps.json
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\bin\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.runtimeconfig.json
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\bin\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.runtimeconfig.dev.json
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\bin\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.dll
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\bin\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.pdb
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\obj\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.csprojAssemblyReference.cache
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\obj\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.csproj.CoreCompileInputs.cache
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\obj\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.AssemblyInfoInputs.cache
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\obj\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.AssemblyInfo.cs
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\obj\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.dll
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\obj\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.pdb
+C:\Users\npeterson\source\repos\Waifu2xVideoUpscaler\Waifu2xVideoUpscaler\obj\Debug\netcoreapp3.1\Waifu2xVideoUpscaler.genruntimeconfig.cache
