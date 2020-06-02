@@ -94,3 +94,31 @@ int ProjectOriginalWidth
 File class
 string FileName
 byte[] FileBytes
+
+
+Startup:
+FrameBucket - 
+	Begins listening on TCP
+	Accepts connections from clients
+	Begins serving requests for work, and accepting completed work
+FrameDigester - 
+	Checks video input folder (I think this is where I will be putting videos for ingestion)
+	If no video files, do nothing
+	If video files, and video files aren't already being rendered, grab all frames from video file, place in new project folder, assign projectIDs
+	Start listening to an event for if files enter the watch folder.
+FrameShitter - 
+	Checks projects on SQL server to determine progress
+	If no projects complete, check back in 5 minutes
+	If projects complete, queue them up to be rendered
+		- Render each video that is ready
+
+Client - 
+	Allows user to choose devices to do work from
+	Start button to begin work
+	If there is work pending to go to the server, will try to send it to complete that package
+	If there's some kind of timeout (can't reach server) will try to send data every 30 seconds until it goes through.
+
+
+
+Points can be something like:
+1 frame = 1000 points

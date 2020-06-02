@@ -1,0 +1,10 @@
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\bin\Debug\FrameClient.exe.config
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\bin\Debug\FrameClient.exe
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\bin\Debug\FrameClient.pdb
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\obj\Debug\FrameClient.csprojAssemblyReference.cache
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\obj\Debug\FrameClient.Form1.resources
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\obj\Debug\FrameClient.Properties.Resources.resources
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\obj\Debug\FrameClient.csproj.GenerateResource.cache
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\obj\Debug\FrameClient.csproj.CoreCompileInputs.cache
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\obj\Debug\FrameClient.exe
+C:\Users\npeterson\Documents\GitHub\DistributedWaifu2x\FrameClient\FrameClient\obj\Debug\FrameClient.pdb
